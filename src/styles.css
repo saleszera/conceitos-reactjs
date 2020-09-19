@@ -1,39 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Roboto:wght@700&display=swap');
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+
+  }
+  100%{
+    opacity: 1;  
+  
+  }
+}
+
+:root{
+  font-size: 60%;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-size: 14px;
+html, body, #root{
+  height: 100vh;
 }
 
-div {
-  width: 100%;
-  margin: 20px;
+body{
+  -webkit-font-smoothing: antialiased !important;
 }
 
-div li {
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+  background-color: #1B1725;  
+}
+
+body, input, button {
+  font-size: 1.6rem;
+  font-family: Roboto;  
+  color: #1B1725;
+}
+
+button{
   display: flex;
   align-items: center;
-}
+  justify-content: center;
 
-div li + li {
-  margin-top: 15px;
-}
-
-button {
-  background: #7159c1;
   color: #fff;
-  border: 0;
-  padding: 10px 15px;
-  cursor: pointer;
-  margin-top: 15px;
   font-weight: bold;
-  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  height: 5vh;  
+  padding: 1rem;
+  
+  animation: fade 1500ms;
+  transition: 0.2s;
 }
 
-div li button {
-  margin: 0 15px;
-  background: #ca4949;
+#add-product-form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #E5EBEA;
+  padding: 2.4rem;
+  border-radius: 8px;
+  width: 25vw;
+  
+  animation: fade 500ms;    
+}
+
+#add-product-form span{  
+  font-family: Ranchers;  
+  padding: 2rem 0 0;
+}
+
+#add-product-form input{
+  border: none;
+  border-radius: 8px;  
+  background-color: #d6dfde;
+  margin-top: 1.0rem;
+  padding: 1rem;  
+  height: 5vh;
+  animation: fade 700ms;
+}
+
+#add-product-form button {
+  background: #7159c1;    
+  margin-top: 2.5rem;    
+}
+
+#add-product-form button:hover{
+  background: #674dbc;
+}
+
+#container-repository{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 50vw;
+  height: 50vh;
+  max-width: 700px;  
+  overflow-y: scroll;  
+}
+
+#container-repository li{
+  display: flex;
+  align-items: center;
+  background-color: #E5EBEA;
+  border-radius: 8px;  
+  padding: 2.4rem;
+  justify-content: space-between;  
+  margin-top: 1.5rem;
+  animation: fade 500ms; 
+}
+
+#container-repository li a{
+  text-decoration: none;   
+  font-family: Ranchers; 
+  color: #1B1725;
+  animation: fade 700ms;
+  transition: 0.2s;
+}
+
+#container-repository li:hover{
+  box-shadow: 3px 2px 8px #7159c1;
+}
+
+#container-repository li a:hover{
+  color: #7159c1;
+}
+
+#container-repository li button {  
+  margin: 0 1.5rem;
+  background: #ca4949;  
+}
+
+#container-repository li button:hover{
+  background: #c63d3d;  
+}
+
+@media(min-width: 700px){
+  #root{
+    flex-direction: row;
+  }
+
+  #add-product-form{
+    margin-top: 0;
+  }
+
+  #add-product-form span{
+    font-size: 1.8rem;
+  }
+
+  #container-repository{
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  #container-repository li a{
+    font-size: 1.8rem;
+  }
 }
