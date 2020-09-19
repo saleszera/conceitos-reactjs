@@ -72,7 +72,7 @@ button{
   background-color: #E5EBEA;
   padding: 2.4rem;
   border-radius: 8px;
-  width: 25vw;
+  width: 60vw;
   
   animation: fade 500ms;    
 }
@@ -153,6 +153,7 @@ button{
 
   #add-product-form{
     margin-top: 0;
+    width: 25vw;
   }
 
   #add-product-form span{
