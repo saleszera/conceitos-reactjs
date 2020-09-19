@@ -25,6 +25,9 @@ function App() {
     })
 
     setRepository([...repository, response.data]);
+    setTitle('');
+    setOwner('');
+    setUrl('');
   }
 
   async function handleRemoveRepository(id) {
@@ -34,32 +37,34 @@ function App() {
   }
 
   return (
-    <div>
-      <form onSubmit={handleAddRepository}>
+    <>
+      <form id="add-product-form" onSubmit={handleAddRepository}>
         <span>Titulo do projeto</span>
-        <input type="text" placeholder="Insira o titulo do projeto" onChange={(e)=> setTitle(e.target.value)}/>
+        <input type="text" value={title} placeholder="Insira o titulo do projeto" required onChange={(e)=> setTitle(e.target.value)}/>
         
         <span>Dono do projeto</span>
-        <input type="text" placeholder="Insira o nome do Dono do projeto" onChange={(e)=> setOwner(e.target.value)}/>
+        <input type="text" value={owner} placeholder="Insira o nome do Dono do projeto" required onChange={(e)=> setOwner(e.target.value)}/>
 
         <span>URL do projeto</span>
-        <input type="text" placeholder="Insira a URL do projeto" onChange={(e)=> setUrl(e.target.value)}/>
+        <input type="text" value={url} placeholder="Insira a URL do projeto" required onChange={(e)=> setUrl(e.target.value)}/>
 
         <button type="submit">Adicionar</button>
       </form>
-      <ul data-testid="repository-list">
-        {repository && repository.map(repo => (
-          <li key={repo.id}>
-            {repo.title}
+    
+      <div id="container-repository">
+        <ul data-testid="repository-list">
+          {repository && repository.map(repo => (
+            <li key={repo.id}>
+              <a href={repo.url} target="_blank" rel="noopener noreferrer">{repo.title}</a>
 
-            <button onClick={() => handleRemoveRepository(repo.id)}>
-              Remover
-            </button>
-          </li>
-        ))}
-      </ul>
-
-    </div>
+              <button onClick={() => handleRemoveRepository(repo.id)}>
+                Remover
+              </button>
+            </li>
+          ))}
+        </ul>      
+      </div>
+    </>
   );
 }
 
