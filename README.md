@@ -23,8 +23,8 @@ Como achei que o resultado do desafio havia ficado simples de mais, decidi adici
 - [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 
 ## 💡️ Como utilizar
-1. Faça o download do back-end utilizando este link: ```https://github.com/saleszera/conceitos-node/archive/master.zip```
-2. Faça o download do front-end utilizando este link: ```https://github.com/saleszera/conceitos-reactjs/archive/master.zip```
+1. Faça o download do back-end clicando [aqui](https://github.com/saleszera/conceitos-node/archive/master.zip)
+2. Faça o download do front-end clicando [aqui](https://github.com/saleszera/conceitos-reactjs/archive/master.zip)
 3. Descompacte o back-end e front-end
 4. Utilizando o terminal, navegue até o diretório do back-end e execute o comando: ```yarn dev```
 5. Abra um novo terminal, navegue até o diretório do front-end e execute o comando: ```yarn start```
