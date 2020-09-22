@@ -102,9 +102,9 @@ button{
 }
 
 #container-repository{
-  margin-top: 15px;
+  margin-top: 1rem;
   margin-bottom: 10px;
-  width: 50vw;
+  width: 55vw;
   height: 50vh;
   max-width: 700px;  
   overflow-y: scroll;  
@@ -161,6 +161,7 @@ button{
   }
 
   #container-repository{
+    width: 30vw;
     margin-left: 20px;
     margin-right: 10px;
   }
