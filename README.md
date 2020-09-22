@@ -23,12 +23,13 @@ Como achei que o resultado do desafio havia ficado simples de mais, decidi adici
 - [Yarn](https://yarnpkg.com/lang/en/docs/install/)
 
 ## 💡️ Como utilizar
-1. Clone o back-end utilizando este comando: ```https://github.com/saleszera/conceitos-node.git```
-2. Clone o front-end utilizando este comando: ```https://github.com/saleszera/conceitos-reactjs.git```
-3. Utilizando o terminal, navegue até o diretório do back-end e execute o comando: ```yarn dev```
-4. Abra um novo terminal, navegue até o diretório do front-end e execute o comando: ```yarn start```
-5. Após executar o passo anterior a aplicação será aberta em seu navegador padrão.
-6. Agora basta preencher todos os campos e clicar no botão **Adicionar**
+1. Faça o download do back-end utilizando este link: ```https://github.com/saleszera/conceitos-node/archive/master.zip```
+2. Faça o download do front-end utilizando este link: ```https://github.com/saleszera/conceitos-reactjs/archive/master.zip```
+3. Descompacte o back-end e front-end
+4. Utilizando o terminal, navegue até o diretório do back-end e execute o comando: ```yarn dev```
+5. Abra um novo terminal, navegue até o diretório do front-end e execute o comando: ```yarn start```
+6. Após executar o passo anterior a aplicação será aberta em seu navegador padrão.
+7. Agora basta preencher todos os campos e clicar no botão **Adicionar**
 
 ## ⚠️ Observações
 - Se o Node.js não esteja instalado, a aplicação não irá funcionar.
