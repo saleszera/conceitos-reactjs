@@ -32,8 +32,8 @@ Como achei que o resultado do desafio havia ficado simples de mais, decidi adici
 7. Agora basta preencher todos os campos e clicar no botão **Adicionar**
 
 ## ⚠️ Observações
-- Se o Node.js não esteja instalado, a aplicação não irá funcionar.
-- Caso o back-end não seja clonado ou não seja executado a aplicação web não irá funcionar.
+- Se o Node.js não estiver instalado, a aplicação não irá funcionar.
+- Caso não seja feito o download do back-end ou o back-end não seja executado a aplicação web não irá funcionar.
 - Todos os campos do formulário são obrigatórios.
 
 # Obrigado por testar a aplicação! 😁️
